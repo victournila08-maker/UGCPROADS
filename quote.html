@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UGC Pro Ads | High-Converting UGC</title>
-  <meta name="description" content="UGC Pro Ads produces user-generated content that builds trust and drives sales. Learn about our mission and team." />
+  <title>Get a Quote | UGC Pro Ads</title>
+  <meta name="description" content="Request a project quote from UGC Pro Ads." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -12,32 +12,38 @@
     <div class="container navbar">
       <a href="index.html" class="logo">UGC Pro Ads</a>
       <nav class="nav-links">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="services.html">Services</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="testimonials.html">Testimonials</a>
-        <a href="quote.html">Get a Quote</a>
+        <a href="quote.html" class="active">Get a Quote</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero container">
-      <div class="hero-content">
-        <h1>UGC That Converts</h1>
-        <p>UGC Pro Ads helps brands connect with customers through authentic creator content. We script, shoot, and edit performance-driven ads.</p>
-        <a class="btn btn-primary" href="quote.html">Get a Quote</a>
-        <a class="btn btn-secondary" href="#about">Learn More</a>
-      </div>
-      <img src="https://via.placeholder.com/500x300" alt="Creators producing content" />
-    </section>
-
-    <section id="about" class="section about">
-      <div class="container">
-        <h2>About Us</h2>
-        <p>Founded by performance marketers, UGC Pro Ads specializes in user-generated content that feels real and converts browsers into buyers.</p>
-        <p>Our mission is to make high-quality creative accessible to brands of all sizes by working with a vetted network of creators and data-driven scripts.</p>
-      </div>
+    <section class="section container">
+      <h1>Get a Quote</h1>
+      <p>Tell us about your project and we'll respond within 1–2 business days.</p>
+      <form id="quote-form" novalidate>
+        <div class="form-group">
+          <label for="name">Name*</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email*</label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="form-group">
+          <label for="details">Project Details*</label>
+          <textarea id="details" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="budget">Budget</label>
+          <input type="text" id="budget" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </section>
   </main>
 
