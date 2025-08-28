@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (form) {
     form.addEventListener('submit', (e) => {
       if (!form.checkValidity()) {
-        // allow browser to display validation errors
+        form.reportValidity();
+        e.preventDefault();
         return;
       }
       e.preventDefault();
